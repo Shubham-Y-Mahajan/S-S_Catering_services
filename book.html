@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Booking</title>
+        <link rel="stylesheet" href="book.css">
+    </head>
+    <body>
+
+        <div id="main">S&S</div>
+
+        <ul><div id="large">
+            <li><a href="homepage.html">Logout</a></li>
+            <li><a href="welcomeuser.php">Home</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+            <li><a href="menu.html" target="_blank">Explore Our Menu</a></li>
+            <li><a href="about_us.html" target="_blank">About Us</a></li>
+        </div>
+        </ul>
+    
+    
+        <div id="welcome">Tell us your Requirements</div><br>
+        <div id="tbox">
+        <br>
+
+        <div id="box">
+        <div id="large">
+        <form action="booked.php" method="post">
+            <label for="event">Type of Event:</label> 
+            <select id="event" name="event" required>
+            <option value="1">Birthday Party</option>
+            <option value="2">Wedding Reception</option>
+            <option value="2">Engagement</option>
+            <option value="1.5">Corporate Event</option>
+            <option value="1">Baby Shower</option>
+            <option value="1.25">Other</option>
+           
+            </select>
+            <br><br>
+        Date:
+        <input type="date" id="bookingdate" name="eventdate" required>
+        <br><br>
+        Choose your food packages:<!-- summation * 100 + event *50  = cost pp   -->
+        <br><br>
+
+
+        <label for="Indian_Veg">Indian Veg package:</label>
+        <select id="Indian_Veg" name="veg" required>
+        <option value="2">Add</option>
+        <option value="0">Do Not Add</option> 
+        </select><br><br>
+
+        <label for="Indian_Non_Veg">Indian Non Veg package:</label>
+        <select id="Indian_Non_Veg" name="nonveg" required>
+        <option value="2">Add</option>
+        <option value="0">Do Not Add</option> 
+        </select><br><br>
+
+        <label for="Chinese">Chinese Package:</label>
+        <select id="Chinese" name="chinese" required>
+        <option value="1.5">Add</option>
+        <option value="0">Do Not Add</option> 
+        </select><br><br>
+
+        <label for="Mexican">Mexiacan package:</label>
+        <select id="Mexican" name="mexican" required>
+        <option value="2">Add</option>
+        <option value="0">Do Not Add</option> 
+        </select><br><br>
+
+        Choose Additional Live Counters<br>
+        <label for="beverage">Beverage Counter:</label>
+        <select id="beverage" name="beverage" required>
+        <option value="1">Add</option>
+        <option value="0">Do Not Add</option> 
+        </select><br><br>
+        <label for="chaat">Chaat Counter:</label>
+        <select id="chaat" name="chaat" required>
+        <option value="1">Add</option>
+        <option value="0">Do Not Add</option> 
+        </select><br><br>
+        <label for="dosa">Dosa Counter:</label>
+        <select id="dosa" name="dosa" required>
+        <option value="1">Add</option>
+        <option value="0">Do Not Add</option> 
+        </select><br><br>
+        <label for="dessert">Dessert Counter:</label>
+        <select id="dessert" name="dessert" required>
+        <option value="1">Add</option>
+        <option value="0">Do Not Add</option> 
+        </select><br><br> 
+
+        Estimated number of guests:
+        <input type="text" name="guests" required><br><br>
+
+        <label for="district">District:</label> <!-- *3* number of guests + cost per plate = additional transportation cost -->
+        <select id="district" name="district" required>
+        <option value="2.3">Balod</option>
+        <option value="1.8">Baloda Bazar</option>
+        <option value="10.8">Balrampur</option>
+        <option value="9.7">Bastar</option>
+        <option value="14.1">Bijapur</option>
+        <option value="3.8">Bilaspur</option>
+        <option value="11.3">Dantewada</option>
+        <option value="2.4">Dhamtari</option>
+        <option value="1.2">Durg</option>
+        <option value="2.2">Gariaband</option>
+        <option value="5.2">Janjgir-Champa</option>
+        <option value="7.3">Jashpur</option>
+        <option value="4.4">Kabirdham</option>
+        <option value="6.9">Kanker</option>
+        <option value="8.8">Kondagaon</option>
+        <option value="6.7">Korba</option>
+        <option value="10">Koriya</option>
+        <option value="1.4">Mahasamund</option>
+        <option value="3.5">Mungeli</option>
+        <option value="8.6">Narayanpur</option>
+        <option value="7.2">Raigarh</option>
+        <option value="0">Raipur</option>
+        <option value="2.7">Rajnandgaon</option>
+        <option value="11.7">Sukma</option>
+        <option value="8.7">Surajpur</option>
+        <option value="14.3">Surguja</option>
+        </select>
+        <br><br>
+       
+        <p>Location of event(detailed address):<br/>
+        <textarea rows="10" cols="40" id="inp08" name="location" required></textarea>
+        <br><br>
+        <p>Special Requests:<br/>
+        <textarea rows="10" cols="40" id="inp09" name="requests">Optional</textarea>
+        <br><br>
+
+        <input type="submit">    
+        </form>
+    </div>
+
+
+    </body>
+</html>

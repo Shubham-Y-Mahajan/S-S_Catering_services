@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Pay</title>
+        <link rel="stylesheet" href="pay.css">
+    </head>
+<body>
+
+    <div id="main">S&S</div>
+    <ul>
+        <ul><div id="large">
+            <li><a href="homepage.html">Logout</a></li>
+            <li><a href="welcomeuser.php">Home</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+            <li><a href="menu.html" target="_blank">Explore Our Menu</a></li>
+            <li><a href="about_us.html" target="_blank">About Us</a></li>
+        </div>
+        </ul>
+    </ul>
+
+
+
+    <div id="welcome">Please Pay To Proceed</div>
+    <div id="tbox">
+    <br><br>
+
+<div id="tbox">
+<div id="box">
+<form action="Thank_you.php" method="post">
+    CardHolder Name: <input type="text" name="Cardholder" required><br><br>
+    <label for="bank">Bank:</label> 
+    <select id="bank" name="bank" required>
+    <option value="ICICI">ICICI</option>
+    <option value="HDFC">HDFC</option>
+    <option value="AXIS">AXIS</option>
+    <option value="SBI">SBI</option>
+    <option value="HSBC">HSBC</option>
+    <option value="PNB">PNB</option>
+   
+    </select><br><br>
+    
+
+
+Debit Card Number:
+<input type="tel" id="1card" name="onecard" placeholder="xxxx" pattern="[0-9]{4}" required>
+<input type="tel" id="2card" name="twocard" placeholder="xxxx" pattern="[0-9]{4}" required>
+<input type="tel" id="3card" name="threecard" placeholder="xxxx" pattern="[0-9]{4}" required>
+<input type="tel" id="4card" name="fourcard" placeholder="xxxx" pattern="[0-9]{4}" required><br><br>
+
+
+PIN: <input type="password" name="Pin"  pattern="[0-9]{4}" required>
+
+
+ 
+</p>
+
+<input type="submit">
+</form>
+</div>
+</div>
+
+</body>
+</html>
